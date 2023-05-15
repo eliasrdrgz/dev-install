@@ -1,0 +1,89 @@
+{
+  "editor.fontSize": 16,
+  "editor.suggestSelection": "first",
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    100
+  ],
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.excludeGitIgnore": false,
+  "files.autoSave": "onFocusChange",
+  "files.eol": "\n",
+  "search.useGlobalIgnoreFiles": true,
+  "search.useIgnoreFiles": true,
+  "workbench.editor.showTabs": false,
+  "explorer.openEditors.visible": 0,
+  // Apparence
+  //"workbench.colorTheme": "Codely Dark",
+  "editor.lineHeight": 2.1,
+  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.dragAndDrop": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "explorer.compactFolders": false,
+  "editor.renderWhitespace": "selection",
+  "breadcrumbs.symbolPath": "off",
+  "workbench.list.horizontalScrolling": true,
+  "workbench.sideBar.location": "left",
+  "workbench.tree.indent": 20,
+  "workbench.list.smoothScrolling": true,
+  "editor.bracketPairColorization.enabled": true,
+  // Actions
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": [
+      "source.addMissingImports",
+      "source.fixAll.eslint"
+    ]
+  },
+  // Extensions
+  "focus.opacity": "0.7",
+  "focus.highlightRange": "block",
+  // Others
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-path.linux": "/home/elias/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vscode-kubernetes.minikube-path.linux": "/home/elias/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "microprofile.alwaysShowOverview": false,
+  "quarkus.tools.alwaysShowWelcomePage": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.startupEditor": "none",
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "boot-java.rewrite.reconcile": true,
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  },
+  "rsp-ui.enableStartServerOnActivation": [
+    {
+      "id": "redhat.vscode-server-connector",
+      "name": "Red Hat Server Connector",
+      "startOnActivation": true
+    }
+  ],
+  "window.zoomLevel": 3,
+  "gitlens.codeLens.enabled": false,
+  // telemetry
+  "telemetry.telemetryLevel": "off",
+  "yaml.schemas": {
+    "file:///home/elias/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "atlascode.bitbucket.enabled": false,
+  "atlascode.jira.enabled": false,
+  "gitlens.defaultDateFormat": null,
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": false,
+}

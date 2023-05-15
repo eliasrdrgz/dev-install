@@ -1,0 +1,80 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+1",
+    "command": "workbench.action.focusSideBar"
+  },
+  {
+    "key": "ctrl+1",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "sideBarFocus"
+  },
+  {
+    "key": "enter",
+    "command": "list.select",
+    "when": "sideBarFocus"
+  },
+  {
+    "key": "ctrl+shift+1",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "cmd+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+cmd+m",
+    "command": "notifications.clearAll"
+  },
+  {
+    "key": "ctrl+alt+cmd+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+alt+,",
+    "command": "workbench.action.toggleStatusbarVisibility"
+  },
+  {
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorTextFocus"
+  },
+  {
+    "key": "cmd+alt+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+alt+cmd+p",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+  },
+  {
+    "key": "alt+right",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "alt+left",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+shift+alt+f3",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+alt+7",
+    "command": "editor.action.jumpToBracket"
+  },
+  {
+    "key": "ctrl+shift+alt+b",
+    "command": "git.branch"
+  }
+]
