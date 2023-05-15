@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  vscode:
+    image: mcr.microsoft.com/devcontainers/base:ubuntu
+    volumes:
+      - ../..:/workspaces:cached
+    network_mode: service:asyncapi
+    command: sleep infinity
+
+  swagger-editor:
+    image: swaggerapi/swagger-editor
+    ports:
+      - "8000:8080"
+
+  asyncapi:
+    image: asyncapi/studio
+    ports:
+      - "8001:80"
