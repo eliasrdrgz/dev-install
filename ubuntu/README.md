@@ -4,6 +4,16 @@
 
     sudo apt update && sudo apt upgrade -y && sudo apt clean && sudo apt remove -y && sudo apt autoremove -y && sdk selfupdate && sdk update
 
+## sudo
+
+## ssh
+
+    sudo apt install openssh-server
+    sudo systemctl enable ssh --now
+
+    cat key.pub > ~/.ssh/authorized_keys
+    chmod 600 ~/.ssh/authorized_keys
+
 ## tools
 
 ### general
