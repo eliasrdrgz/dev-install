@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  asyncapi:
+    image: asyncapi/studio
+    ports:
+      - "1080:80"
+
+  openapi:
+    image: swaggerapi/swagger-editor
+    ports:
+      - "18080:8080"
