@@ -1,0 +1,269 @@
+{
+  "activeProfiles": [],
+  "propertySources": [
+    {
+      "name": "server.ports",
+      "properties": {
+        "local.server.port": {
+          "value": "******"
+        }
+      }
+    },
+    {
+      "name": "servletContextInitParams",
+      "properties": {}
+    },
+    {
+      "name": "systemProperties",
+      "properties": {
+        "java.specification.version": {
+          "value": "******"
+        },
+        "sun.jnu.encoding": {
+          "value": "******"
+        },
+        "java.class.path": {
+          "value": "******"
+        },
+        "java.vm.vendor": {
+          "value": "******"
+        },
+        "sun.arch.data.model": {
+          "value": "******"
+        },
+        "java.vendor.url": {
+          "value": "******"
+        },
+        "catalina.useNaming": {
+          "value": "******"
+        },
+        "user.timezone": {
+          "value": "******"
+        },
+        "java.vm.specification.version": {
+          "value": "******"
+        },
+        "os.name": {
+          "value": "******"
+        },
+        "sun.java.launcher": {
+          "value": "******"
+        },
+        "user.country": {
+          "value": "******"
+        },
+        "sun.boot.library.path": {
+          "value": "******"
+        },
+        "sun.java.command": {
+          "value": "******"
+        },
+        "jdk.debug": {
+          "value": "******"
+        },
+        "sun.cpu.endian": {
+          "value": "******"
+        },
+        "org.springframework.cloud.bindings.boot.enable": {
+          "value": "******"
+        },
+        "user.home": {
+          "value": "******"
+        },
+        "user.language": {
+          "value": "******"
+        },
+        "java.specification.vendor": {
+          "value": "******"
+        },
+        "java.security.properties": {
+          "value": "******"
+        },
+        "java.version.date": {
+          "value": "******"
+        },
+        "java.home": {
+          "value": "******"
+        },
+        "file.separator": {
+          "value": "******"
+        },
+        "java.vm.compressedOopsMode": {
+          "value": "******"
+        },
+        "line.separator": {
+          "value": "******"
+        },
+        "java.vm.specification.vendor": {
+          "value": "******"
+        },
+        "java.specification.name": {
+          "value": "******"
+        },
+        "FILE_LOG_CHARSET": {
+          "value": "******"
+        },
+        "java.awt.headless": {
+          "value": "******"
+        },
+        "sun.management.compiler": {
+          "value": "******"
+        },
+        "java.runtime.version": {
+          "value": "******"
+        },
+        "user.name": {
+          "value": "******"
+        },
+        "path.separator": {
+          "value": "******"
+        },
+        "os.version": {
+          "value": "******"
+        },
+        "java.runtime.name": {
+          "value": "******"
+        },
+        "file.encoding": {
+          "value": "******"
+        },
+        "java.vm.name": {
+          "value": "******"
+        },
+        "java.vendor.url.bug": {
+          "value": "******"
+        },
+        "java.io.tmpdir": {
+          "value": "******"
+        },
+        "catalina.home": {
+          "value": "******"
+        },
+        "java.version": {
+          "value": "******"
+        },
+        "user.dir": {
+          "value": "******"
+        },
+        "os.arch": {
+          "value": "******"
+        },
+        "java.vm.specification.name": {
+          "value": "******"
+        },
+        "PID": {
+          "value": "******"
+        },
+        "CONSOLE_LOG_CHARSET": {
+          "value": "******"
+        },
+        "catalina.base": {
+          "value": "******"
+        },
+        "native.encoding": {
+          "value": "******"
+        },
+        "java.library.path": {
+          "value": "******"
+        },
+        "java.vm.info": {
+          "value": "******"
+        },
+        "java.vendor": {
+          "value": "******"
+        },
+        "java.vm.version": {
+          "value": "******"
+        },
+        "sun.io.unicode.encoding": {
+          "value": "******"
+        },
+        "java.class.version": {
+          "value": "******"
+        }
+      }
+    },
+    {
+      "name": "systemEnvironment",
+      "properties": {
+        "PATH": {
+          "value": "******",
+          "origin": "System Environment Property \"PATH\""
+        },
+        "BPL_JVM_THREAD_COUNT": {
+          "value": "******",
+          "origin": "System Environment Property \"BPL_JVM_THREAD_COUNT\""
+        },
+        "JAVA_HOME": {
+          "value": "******",
+          "origin": "System Environment Property \"JAVA_HOME\""
+        },
+        "CLASSPATH": {
+          "value": "******",
+          "origin": "System Environment Property \"CLASSPATH\""
+        },
+        "NMT_LEVEL_1": {
+          "value": "******",
+          "origin": "System Environment Property \"NMT_LEVEL_1\""
+        },
+        "BPI_JVM_SECURITY_PROVIDERS": {
+          "value": "******",
+          "origin": "System Environment Property \"BPI_JVM_SECURITY_PROVIDERS\""
+        },
+        "HOSTNAME": {
+          "value": "******",
+          "origin": "System Environment Property \"HOSTNAME\""
+        },
+        "JAVA_TOOL_OPTIONS": {
+          "value": "******",
+          "origin": "System Environment Property \"JAVA_TOOL_OPTIONS\""
+        },
+        "LD_LIBRARY_PATH": {
+          "value": "******",
+          "origin": "System Environment Property \"LD_LIBRARY_PATH\""
+        },
+        "JAVA_SECURITY_PROPERTIES": {
+          "value": "******",
+          "origin": "System Environment Property \"JAVA_SECURITY_PROPERTIES\""
+        },
+        "BPI_APPLICATION_PATH": {
+          "value": "******",
+          "origin": "System Environment Property \"BPI_APPLICATION_PATH\""
+        },
+        "BPI_JVM_CACERTS": {
+          "value": "******",
+          "origin": "System Environment Property \"BPI_JVM_CACERTS\""
+        },
+        "BPI_JVM_CLASS_COUNT": {
+          "value": "******",
+          "origin": "System Environment Property \"BPI_JVM_CLASS_COUNT\""
+        },
+        "HOME": {
+          "value": "******",
+          "origin": "System Environment Property \"HOME\""
+        },
+        "MALLOC_ARENA_MAX": {
+          "value": "******",
+          "origin": "System Environment Property \"MALLOC_ARENA_MAX\""
+        }
+      }
+    },
+    {
+      "name": "Config resource 'class path resource [application.properties]' via location 'optional:classpath:/'",
+      "properties": {
+        "management.endpoints.web.exposure.include": {
+          "value": "******",
+          "origin": "class path resource [application.properties] - 1:43"
+        },
+        "spring.jackson.default-property-inclusion": {
+          "value": "******",
+          "origin": "class path resource [application.properties] - 2:43"
+        },
+        "pastries.baseUrl": {
+          "value": "******",
+          "origin": "class path resource [application.properties] - 3:18"
+        }
+      }
+    }
+  ]
+}
