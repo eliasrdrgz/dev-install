@@ -107,6 +107,19 @@ See `docker-ce`
 
     cd /tmp && curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-$(dpkg --print-architecture)
     sudo install minikube-linux-$(dpkg --print-architecture) /usr/local/bin/minikube
+    # for microcks
+    minikube -p microcks start --cpus='8' --memory='16384' --addons ingress,ingress-dns
+
+#### helm
+
+TBD
+
+#### k9s
+
+    cd /tmp && wget https://github.com/derailed/k9s/releases/download/v0.28.1/k9s_Linux_amd64.tar.gz && \
+    tar xzf k9s_Linux_amd64.tar.gz && \
+    sudo install k9s /usr/local/bin/k9s && \
+    cd -
 
 #### knative
 
@@ -133,6 +146,47 @@ Requires an architecture detection to automate the appropiate release, see [here
 
     curl -LO https://github.com/knative/func/releases/download/knative-v$(curl -L -s https://api.github.com/repos/knative/func/releases/latest | grep -Po '"tag_name": "v\K[0-9.]+')/func_linux_$(dpkg --print-architecture)
     sudo install -o root -g root -m 0755 func /usr/local/bin
+
+#### microcks
+
+##### operator
+
+    kubectl create namespace microcks
+    kubectl apply -f https://microcks.io/operator/operator-latest.yaml -n microcks
+
+###### minimal
+
+    curl https://microcks.io/operator/minikube-minimal.yaml -s | sed 's/KUBE_APPS_URL/'$(minikube ip)'.nip.io/g' | kubectl apply -n microcks -f -
+
+###### full features
+
+    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
+    kubectl patch -n ingress-nginx deployment/ingress-nginx-controller --type='json' \
+    -p '[{"op":"add","path":"/spec/template/spec/containers/0/args/-","value":"--enable-ssl-passthrough"}]'
+    kubectl apply -f 'https://strimzi.io/install/latest?namespace=microcks' -n microcks
+    curl https://microcks.io/operator/minikube-features.yaml -s | sed 's/KUBE_APPS_URL/'$(minikube -p microcks ip)'.nip.io/g' | kubectl apply -n microcks -f -
+
+##### helm
+
+    helm repo add microcks https://microcks.io/helm
+    helm repo update
+    kubectl create namespace microcks
+    helm install microcks microcks/microcks —-version 1.7.0 --namespace microcks --set microcks.url=microcks.$(minikube ip).nip.io --set keycloak.url=keycloak.$(minikube ip).nip.io
+
+##### helm - asynchronous
+
+    helm repo add microcks https://microcks.io/helm
+    helm repo add strimzi https://strimzi.io/charts/
+    helm repo update
+    kubectl create namespace microcks
+    helm install strimzi strimzi/strimzi-kafka-operator --namespace microcks
+    helm install microcks microcks/microcks --namespace=microcks \
+    --set appName=microcks --set features.async.enabled=true \
+    --set microcks.url=microcks.$(minikube ip -p microcks).nip.io \
+    --set keycloak.url=keycloak.$(minikube ip -p microcks).nip.io \
+    --set features.async.kafka.url=$(minikube ip -p microcks).nip.io
+
+    minikube -p microcks stop && minikube delete -p microcks 
 
 ### IDE
 
