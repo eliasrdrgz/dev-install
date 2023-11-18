@@ -33,6 +33,7 @@ vboxmanage guestproperty set "Fedora CoreOS stable" /Ignition/Config "$(cat fedo
 # VBoxManage modifyvm "Fedora CoreOS stable" --uart1 0x3F8 4
 
 vboxmanage startvm "Fedora CoreOS stable" 
+vboxheadless --startvm "Fedora CoreOS stable" # no gui
 
 vboxmanage controlvm "Fedora CoreOS stable" poweroff
 ```
